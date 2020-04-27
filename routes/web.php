@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user/{id}',function($id){
+    return "Your id is".$id;
+});
