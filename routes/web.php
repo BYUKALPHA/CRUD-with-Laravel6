@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StudentController@index');
+
+Route::get('/test-page', 'TestController@index');
+
 Route::get('/user/{id}',function($id){
     return "Your id is".$id;
 });
