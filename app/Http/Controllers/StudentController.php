@@ -30,4 +30,9 @@ public function index(){
         return redirect(route('home'))->with('successMsg','Student Successfully created');
     }
 
+    public function edit($id){
+    $student = Student::find($id);
+    return view('edit',compact('student'));
+    }
+
 }

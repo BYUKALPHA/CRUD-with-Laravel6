@@ -14,6 +14,8 @@
     <link href="{{asset('test/css/mdb.min.css')}}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="{{asset('test/css/style.css')}}" rel="stylesheet">
+    <!-- Bootstrap font awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  crossorigin="anonymous">
 <
 <body>
 @include('layouts.navbar')
