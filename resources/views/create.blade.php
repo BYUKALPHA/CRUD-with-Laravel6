@@ -3,10 +3,18 @@
 @section('content')
 
 <div class="container">
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <div class="alert alert-danger" role="alert">
+               {{$error}}
+            </div>
+            @endforeach
+        @endif
+
     <h1>Create Page</h1>
     <!-- Default form register -->
     <form class="text-center border border-light p-5" action="{{route('store')}}" method="POST">
-
+        {{csrf_field()}}
         <p class="h4 mb-4">Add Student</p>
 
         <div class="form-row mb-4">
