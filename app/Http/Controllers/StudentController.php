@@ -50,5 +50,9 @@ public function index(){
         $student->save();
         return redirect(route('home'))->with('successMsg','Student Successfully updated');
     }
+    public function delete($id){
+    Student::find($id)->delete();
+    return redirect(route('home'))->with('successMsg','Student Successfully Deleted');
+    }
 
 }
